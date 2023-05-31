@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>영화 검색 사이트</title>
+</head>
+
+<body>
+  <header>
+    <h1>영화 검색 사이트</h1>
+  </header>
+
+  <form id="form" class="search" onsubmit="handleSearch(event)">
+    <label>영화 검색 : </label>
+    <input type="text" id="search" placeholder="영화 제목을 검색해 보세요" />
+    <button type="submit" id="search-btn">검색</button>
+  </form>
+ 
+    <section class="card-list" id="main">
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+        <p class="vote_average">평점</p>
+        <p class="overview">내용 요약</p>
+      </div>
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+        <p class="vote_average">평점</p>
+        <p class="overview">내용 요약</p>
+      </div>
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+        <p class="green">평점</p>
+        <p class="overview">내용 요약</p>
+      </div>
+    </section>
+
+
+    <script src="movie.js"></script>
+
+</body>
+
+
+
+</html>
