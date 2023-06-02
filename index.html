@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie search site</title>
+  <link rel="stylesheet" href="style.css">
+  <title>영화 검색 사이트</title>
 </head>
-<body>
-  <nav>
-    <h1> 영화 검색 사이트</h1>
-    <ul>
-      <li>첫 번째 메뉴</li>
-      <li>두 번째 메뉴</li>
-      <li>세 번째 메뉴</li>
-    </ul>
-        
-  </nav>
-    <main>
-    <!-- <h1>메인 영역의 제목</h1> -->
-    <img
-    src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
-    alt="이미지 없음"
-    />
-    </main>
-    <footer>
-      copyright.
-    </footer>
 
-    
+<body>
+  <header>
+    <h1><img src="https://i.postimg.cc/dV4SyyXd/couch-monster.jpg" alt="img"></h1>
+  </header>
+
+
+  <form id="form" >
+    <input type="text" id="search" class="search" placeholder="영화 제목을 검색해 보세요" />
+    <button type="submit" class="btn"><img src="https://i.postimg.cc/fLNYcW9Q/image.png" class="icon" alt="icon"></button>
+  </form>
+ 
+    <section class="card-list" id="main">
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <div class="view">
+          <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+          <p class="vote_average">평점</p>
+          <p class="overview">내용 요약</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <div class="view">
+          <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+          <p class="vote_average">평점</p>
+          <p class="overview">내용 요약</p>
+        </div>
+      </div>
+      <div class="movie-card">
+        <a href="#"><img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg"
+        alt="image" onclick="alert('id')"></a>
+        <div class="view">
+          <h3 class="card-title">영화 제목이 들어갑니다.</h3>
+          <p class="green">평점</p>
+          <p class="overview">내용 요약</p>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="movie.js"></script>
+
 </body>
+
+
+
 </html>
